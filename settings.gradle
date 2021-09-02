@@ -1,0 +1,15 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+        // START PDFTron
+        maven {
+            url "https://pdftron-maven.s3.amazonaws.com/release"
+        }
+        // END PDFTron
+    }
+}
+rootProject.name = "PDFTron Test"
+include ':app'
